@@ -1,0 +1,20 @@
+.container {
+  min-height: var(--content-height);
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  color: var(--text-primary-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-secondary-color);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}

@@ -1,10 +1,15 @@
+import { HomePage } from "@components/HomePage/HomePage";
+import Head from "next/head";
 
 
 const index = () => {
   return (
-    <h1>
-      HomePage 
-    </h1>
+    <div>
+      <Head>
+        <title>Home page</title>
+      </Head>
+      <HomePage/>
+    </div>
   );
 };
 

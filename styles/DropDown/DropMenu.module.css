@@ -1,0 +1,17 @@
+.none {
+  display: none;
+}
+
+.dropMenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+  padding: 1em;
+  color: var(--text-primary-color);
+  background-color: var(--primary-color);
+  min-height: fit-content;
+  min-width: fit-content;
+  cursor: text;
+}

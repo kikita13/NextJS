@@ -6,6 +6,7 @@
       "@public/*": ["./public/*"],
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
+      "@consts/*": ["./consts/*"],
     }
   }
 }

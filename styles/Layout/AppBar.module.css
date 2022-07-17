@@ -1,0 +1,24 @@
+.nav{
+  min-height: var(--nav-height);
+  width: var(--nav-width);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navDivider {
+  flex-grow: 1;
+}
+
+.navItem {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: var(--nav-padding);
+  cursor: pointer;
+}
+

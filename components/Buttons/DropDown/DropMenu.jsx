@@ -1,4 +1,4 @@
-import styles from '@styles/DropDown.module.css'
+import styles from '@styles/DropDown/DropMenu.module.css'
 
 export const DropMenu = ({isOpen}) => {
   return (
