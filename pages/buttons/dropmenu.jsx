@@ -11,7 +11,6 @@ const index = () => {
       </Head>
       <DropDown />
       <DropDown />
-      <DropDown />
     </div>
   );
 };
