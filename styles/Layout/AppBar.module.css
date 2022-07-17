@@ -21,10 +21,12 @@
   padding: var(--nav-padding);
   cursor: pointer;
   border-bottom: 1px solid transparent;
-
+  transition: all .2s ease-in;
+  user-select: none;
 }
 
 .active {
   border-bottom: 1px solid var(--text-primary-color);
+  transition: all .2s ease-in;
 }
 
