@@ -1,5 +1,5 @@
 import { AppBar } from "./AppBarItems/AppBar";
-import { Footer } from "./Footer";
+import { Footer } from "./FooterItems/Footer";
 
 
 export const Layout = ({children}) => {

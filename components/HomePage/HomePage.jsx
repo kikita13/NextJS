@@ -12,11 +12,10 @@ export const HomePage = () => {
       <Image
         className={styles.image}
         src='/github-icon.svg'
-        placeholder="blur"
         layout='fill'
+        placeholder="blur"
         blurDataURL='base64'
         alt='GitHub icon'
-        style="display:none"
         />
         <Link href={GIT_HUB}>
           <button className={styles.button}>

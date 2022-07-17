@@ -4,5 +4,32 @@
   height: var(--footer-height);
   width: var(--footer-width);
   background-color: var(--primary-color);
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.itemContent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  border-left: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.itemContent:hover{
+  border-left: 1px solid var(--text-primary-color);
 }

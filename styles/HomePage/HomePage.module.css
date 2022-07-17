@@ -1,21 +1,21 @@
 .container {
+  position: relative;
   min-height: var(--content-height);
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-primary-color);
-  position: relative;
 }
 
 .button {
-  position: relative;
   color: var(--text-primary-color);
   background-color: var(--bg-color);
   border: 1px solid var(--text-secondary-color);
   padding: 10px;
   font-size: 40px;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 .button:hover {
