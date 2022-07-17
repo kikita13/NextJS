@@ -13,8 +13,6 @@ export const HomePage = () => {
         className={styles.image}
         src='/github-icon.svg'
         layout='fill'
-        placeholder="blur"
-        blurDataURL='base64'
         alt='GitHub icon'
         />
         <Link href={GIT_HUB}>

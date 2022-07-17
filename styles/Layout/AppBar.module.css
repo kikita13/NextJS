@@ -20,5 +20,11 @@
   list-style: none;
   padding: var(--nav-padding);
   cursor: pointer;
+  border-bottom: 1px solid transparent;
+
+}
+
+.active {
+  border-bottom: 1px solid var(--text-primary-color);
 }
 
