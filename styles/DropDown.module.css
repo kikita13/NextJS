@@ -1,0 +1,24 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  position: relative;
+}
+
+
+.none {
+  display: none;
+}
+
+.dropMenu {
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  top: 30px;
+  background: rgb(230, 230, 230);
+  border: 1px solid rgb(216, 216, 216);
+}
