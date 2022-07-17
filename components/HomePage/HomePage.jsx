@@ -15,7 +15,7 @@ export const HomePage = () => {
         placeholder="blur"
         layout='fill'
         blurDataURL='base64'
-        
+        alt='GitHub icon'
         />
         <Link href={GIT_HUB}>
           <button className={styles.button}>
