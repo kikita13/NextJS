@@ -1,0 +1,1 @@
+export const GIT_HUB = 'https://github.com/kikita13'
