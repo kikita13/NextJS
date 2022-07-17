@@ -1,10 +1,10 @@
-
+import React from 'react';
 
 const index = () => {
   return (
-    <h1>
-      HomePage 
-    </h1>
+    <div>
+      
+    </div>
   );
 };
 

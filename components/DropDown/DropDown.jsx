@@ -1,4 +1,4 @@
-import styles from '../styles/DropDown.module.css'
+import styles from '@styles/DropDown.module.css'
 import { DropMenu } from './DropMenu';
 import { useState } from 'react';
 
