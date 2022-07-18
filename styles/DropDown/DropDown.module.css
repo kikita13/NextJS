@@ -8,7 +8,9 @@
 }
 
 .content {
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .button {

@@ -9,8 +9,11 @@ const index = () => {
       <Head>
         <title>Drop menu</title>
       </Head>
-      <DropDown />
-      <DropDown />
+      <div className={styles.content}>
+        <DropDown />
+        <DropDown />
+        <DropDown />
+      </div>
     </div>
   );
 };
