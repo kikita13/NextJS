@@ -12,7 +12,6 @@ const index = () => {
       <div className={styles.content}>
         <DropDown />
         <DropDown />
-        <DropDown />
       </div>
     </div>
   );
