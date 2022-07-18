@@ -1,3 +1,9 @@
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .container {
   min-height: var(--content-height);
   display: flex;
@@ -6,11 +12,6 @@
   background-color: var(--bg-color);
 }
 
-.content {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
 
 .button {
   position: relative;
@@ -25,3 +26,15 @@
   background-color: var(--primary-color);
 }
 
+.button:hover + .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  color: var(--text-secondary-color);
+  transform: translateY(calc(-100% - 10px));
+  visibility: hidden;
+  opacity: 0;
+}

@@ -1,4 +1,4 @@
-import { Buttons } from '@components/Buttons/Buttons';
+import { Buttons } from '@components/Buttons/Buttons/Buttons';
 import Head from 'next/head';
 
 
