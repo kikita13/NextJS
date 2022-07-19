@@ -13,7 +13,7 @@ export const Nav404 = ( { styles } ) => {
       <li
         className={handleActive()}
       >
-        REST API
+        404
       </li>
     </Link>
   );
