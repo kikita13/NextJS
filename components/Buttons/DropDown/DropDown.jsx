@@ -7,13 +7,11 @@ export const DropDown = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
       <div className={styles.content}>
       <button onClick={() => setIsOpen(current => !current) } className={styles.button}>
         Click me!
       </button>
         <DropMenu className={styles.none} isOpen={isOpen} setIsOpen={setIsOpen}/>
       </div>
-    </div>
   );
 };
