@@ -1,6 +1,8 @@
-decompose css files tooltip
+## decompose css files tooltip
 
 referens on another css files in project
 
-
 css with ~ symbol 
+
+## if possible get var from Func
+
