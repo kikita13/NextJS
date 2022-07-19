@@ -4,7 +4,7 @@ export const USERS_API = 'https://jsonplaceholder.typicode.com/users'
 
 
 
-export const getStaticProps = async () => {
+export const getStaticProps = async (context) => {
   const getData = await fetch(USERS_API);
   const data = await getData.json();
   return {
