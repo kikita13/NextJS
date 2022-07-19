@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  min-height: var(--content-height);
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text-primary-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: var(--content-height);
+}
