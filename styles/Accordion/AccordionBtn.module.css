@@ -1,15 +1,26 @@
 .button {
-  position: relative;
   color: var(--text-primary-color);
   background-color: var(--bg-color);
-  border: 1px solid var(--text-secondary-color);
   padding: 10px;
   font-size: 16px;
-  cursor: pointer;
   transition: all .3s ease-in;
+  border: 1px solid transparent;
+  width: 100%;
+  z-index: 1;
 }
 
 .button:hover {
   transition: all .3s ease-in;
   background-color: var(--primary-color);
+}
+
+.activeButton {
+  width: 100%;
+  color: var(--text-primary-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-secondary-color);
+  padding: 10px;
+  font-size: 16px;
+  transition: all .3s ease-in;
+  z-index: 1;
 }

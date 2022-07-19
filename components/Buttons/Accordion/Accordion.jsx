@@ -8,9 +8,11 @@ export const Accordion = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className={styles.accordion}>
-      <AccordionBtn isOpen={isOpen} setIsOpen={setIsOpen} />
-      <AccordionMenu isOpen={isOpen}/>
+    <div className={styles.content}>
+      <div className={isOpen ? styles.activeContent : styles.content}>
+        <AccordionBtn isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <AccordionMenu isOpen={isOpen}/>
+      </div>
     </div>
   );
 };
