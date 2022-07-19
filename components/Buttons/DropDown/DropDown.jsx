@@ -3,9 +3,9 @@ import { DropMenu } from './DropMenu';
 import { useState } from 'react';
 
 
-export const DropDown = (props) => {
+export const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
       <div className={styles.content}>
       <button onClick={() => setIsOpen(current => !current) } className={styles.button}>
