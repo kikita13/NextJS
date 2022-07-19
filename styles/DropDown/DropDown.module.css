@@ -16,6 +16,7 @@
 }
 
 .button {
+  transition: all .3s ease-in;
   position: relative;
   color: var(--text-primary-color);
   background-color: var(--bg-color);
@@ -27,4 +28,5 @@
 
 .button:hover {
   background-color: var(--primary-color);
+  transition: all .3s ease-in;
 }

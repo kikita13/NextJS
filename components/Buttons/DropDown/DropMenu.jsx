@@ -5,7 +5,7 @@ export const DropMenu = ({isOpen}) => {
     <div
       className={isOpen ? styles.dropMenu : styles.none} 
       >
-      it is a menu drop text
+      It is a menu drop text
     </div>
   );
 };

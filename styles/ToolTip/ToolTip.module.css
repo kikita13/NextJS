@@ -20,18 +20,25 @@
   border: 1px solid var(--text-secondary-color);
   padding: 10px;
   font-size: 16px;
+  transition: all .3s ease-in;
+
 }
 
 .button:hover {
   background-color: var(--primary-color);
+  transition: all .3s ease-in;
+
 }
 
 .button:hover + .text {
+  transition: all .3s ease-in;
   visibility: visible;
   opacity: 1;
 }
 
 .text {
+  transition: all .3s ease-in;
+
   position: absolute;
   color: var(--text-secondary-color);
   transform: translateY(calc(-100% - 10px));

@@ -1,0 +1,20 @@
+.container {
+  min-height: var(--content-height);
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
