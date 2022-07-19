@@ -7,7 +7,7 @@ const accordions = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Drop menu</title>
+        <title>Accordions</title>
       </Head>
       <Accordion />
       <Accordion />

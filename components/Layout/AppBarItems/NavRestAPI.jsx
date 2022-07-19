@@ -1,0 +1,20 @@
+import Link from "next/link";
+import { BUTTONS, RESTAPI } from '@consts/nav-links'
+import { useRouter } from "next/router";
+
+
+export const NavRestAPI = ( { styles } ) => {
+  const {pathname} = useRouter();
+
+  const handleActive = () => pathname.includes(RESTAPI) ? `${styles.navItem}  ${styles.active}` : `${styles.navItem}`
+
+  return (
+    <Link href={RESTAPI}>
+      <li
+        className={handleActive()}
+      >
+        REST API
+      </li>
+    </Link>
+  );
+};
