@@ -1,0 +1,15 @@
+.container {
+  min-height: var(--content-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.content {
+  height: var(--content-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
