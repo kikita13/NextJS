@@ -14,10 +14,18 @@
 }
 
 .buttons {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   width: 100%;
   margin: 2em auto;
   gap: 15px;
   padding: 0 15px;
+}
+
+
+@media (max-width: 550px) {
+  .buttons {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

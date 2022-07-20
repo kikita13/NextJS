@@ -1,7 +1,7 @@
 .users {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25ch,1fr));
-  grid-template-rows: repeat(auto-fill, minmax(1fr,1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   color: var(--text-primary-color);
   text-align: center;
   margin: auto 0;
@@ -20,6 +20,18 @@
   cursor: pointer;
   transition: all .3s ease-in;
   background-color: var(--primary-color);
+}
+
+@media (max-width: 550px) {
+  .users {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 680px) {
+  .users {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1250px) {
