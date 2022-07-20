@@ -10,7 +10,7 @@ export const HomePage = ( { styles } ) => {
         src='/github-icon.svg'
         layout='fill'
         alt='GitHub icon'
-        style={{ marginTop: 10 }}
+        priority={true}
       />
       <Link href={GIT_HUB}>
         <button className={styles.button}>

@@ -31,3 +31,6 @@
   position: relative;
 }
 
+.content span img {
+  margin-top: 10px !important;
+}

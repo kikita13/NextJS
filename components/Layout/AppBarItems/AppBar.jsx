@@ -5,8 +5,10 @@ import { NavHome } from './NavHome';
 import { NavRestAPI } from './NavRestAPI';
 
 
+
+
 export const AppBar = () => {
-  return (
+  const navMain = (
     <nav>
       <ul className={styles.nav}>
         <NavHome styles={styles}/>
@@ -15,6 +17,8 @@ export const AppBar = () => {
         <NavRestAPI styles={styles}/>
         <Nav404 styles={styles}/>
       </ul>
-    </nav>
+  </nav>
   );
+  return navMain 
+     
 };
