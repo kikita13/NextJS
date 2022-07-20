@@ -5,9 +5,8 @@ import { UsersAPI } from '@components/RestApi/UsersAPI';
 import { USERS_API } from '@consts/out-links';
 
 
-const index = ( { users } ) => {
+const Index = ( { users } ) => {
   const [usersData, setUsersData] = useState([])
-  console.log(usersData);
   return (
   <div className={styles.container}>
     <Head>
@@ -26,4 +25,4 @@ export const getStaticProps = async (context) => {
   }
 }
 
-export default index;
+export default Index;
