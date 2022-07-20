@@ -1,25 +1,22 @@
-import styles from '@styles/HomePage/HomePage.module.css'
 import Link from 'next/link';
 import { GIT_HUB } from '@consts/out-links';
 import Image from 'next/image';
 
-export const HomePage = () => {
-
-  
+export const HomePage = ( { styles } ) => {
 
   return (
-    <div className={styles.container}>
+    <div className={styles.content}>
       <Image
-        className={styles.image}
         src='/github-icon.svg'
         layout='fill'
         alt='GitHub icon'
-        />
-        <Link href={GIT_HUB}>
-          <button className={styles.button}>
-            My GitHub
-          </button>
-        </Link>
+        style={{ marginTop: 10 }}
+      />
+      <Link href={GIT_HUB}>
+        <button className={styles.button}>
+          My GitHub
+        </button>
+      </Link>
     </div>
   );
 };

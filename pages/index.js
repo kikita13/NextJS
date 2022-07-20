@@ -1,14 +1,14 @@
 import { HomePage } from "@components/HomePage/HomePage";
 import Head from "next/head";
-
+import styles from '@styles/HomePage/HomePage.module.css'
 
 const index = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Home page</title>
       </Head>
-      <HomePage/>
+      <HomePage styles={styles}/>
     </div>
   );
 };

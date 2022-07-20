@@ -1,11 +1,9 @@
 .container {
-  position: relative;
-  min-height: var(--content-height);
-  background-color: var(--bg-color);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-primary-color);
+  background-color: var(--bg-color);
 }
 
 .button {
@@ -16,8 +14,20 @@
   font-size: 40px;
   letter-spacing: 2px;
   z-index: 1;
+  transition: all .3s ease-in;
 }
 
 .button:hover {
   background-color: var(--primary-color);
+  transition: all .3s ease-in;
 }
+
+.content {
+  height: var(--content-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+

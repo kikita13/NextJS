@@ -1,5 +1,5 @@
 .container {
-  min-height: var(--content-height);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,9 +7,10 @@
 }
 
 .content {
+  padding: var(--nav-height) 0px var(--footer-height) 0px;
   height: var(--content-height);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 100%;
 }
+

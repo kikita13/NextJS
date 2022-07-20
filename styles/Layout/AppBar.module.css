@@ -1,12 +1,13 @@
 .nav{
-  min-height: var(--nav-height);
+  height: var(--nav-height);
   width: var(--nav-width);
   background-color: var(--primary-color);
   color: var(--text-primary-color);
   display: flex;
   margin: 0;
   padding: 0;
-
+  position: fixed;
+  z-index: 3;
 }
 
 .navDivider {

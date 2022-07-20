@@ -1,5 +1,5 @@
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: var(--footer-height);
   width: var(--footer-width);
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 2px;
+  z-index: 3;
 }
 
 .footerContent {

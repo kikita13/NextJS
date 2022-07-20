@@ -1,0 +1,23 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25ch,1fr));
+  grid-template-rows: repeat(auto-fill, minmax(fr,1fr));
+  color: var(--text-primary-color);
+  text-align: center;
+  margin: auto 0;
+  flex-wrap: wrap;
+  padding-bottom: var(--footer-height);
+}
+
+.user {
+  margin: 10px;
+  line-height: 1em;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.user:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  background-color: var(--primary-color);
+}
