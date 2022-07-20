@@ -13,7 +13,7 @@ export const NavRestAPI = ( { styles } ) => {
       <li
         className={handleActive()}
       >
-        REST API
+        API
       </li>
     </Link>
   );
