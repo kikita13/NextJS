@@ -33,3 +33,77 @@
   transition: all .2s ease-in;
 }
 
+
+
+
+.navDrawer{
+  height: var(--nav-height);
+  width: var(--nav-width);
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.navDrawerToggle {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding-right: 100px;
+  
+}
+
+.image:hover {
+  border-radius: 20%;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: .3s ease-in;
+}
+
+.image{
+  border-radius: 20%;
+  background-color: transparent;
+  transition: .3s ease-in;
+}
+
+.driverItems {
+  transition: all .3s ease-in;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%) translateY(80px);
+  right: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  align-items: center;
+}
+
+.driverItemsActive {
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(85px);
+  right: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  transition: all .3s ease-in;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.navDividerDrawer {
+  flex-grow: 1;
+}
