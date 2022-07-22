@@ -14,8 +14,8 @@ export const NavDrawer = ( { styles } ) => {
       <ul className={styles.nav}>
         <NavHome styles={styles} />
         <div className={styles.navDivider} />
-        <div className={styles.navDrawerToggle} onClick={() => setOpen(cur => !cur)}>
-          <div className={styles.image}>
+        <div className={styles.navDrawerToggle}>
+          <div className={styles.image} onClick={() => setOpen(cur => !cur)}>
             <Image
               alt='drawer toggle'
               src='/menu-list-icon.svg' 

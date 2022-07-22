@@ -55,7 +55,7 @@
   align-items: center;
   display: flex;
   height: 100%;
-  padding-right: 100px;
+  padding-right: 15px;
   
 }
 
@@ -83,7 +83,6 @@
   background-color: var(--primary-color);
   position: absolute;
   z-index: 0;
-  width: 100%;
   align-items: center;
 }
 
@@ -97,10 +96,10 @@
   background-color: var(--primary-color);
   position: absolute;
   z-index: 0;
-  width: 100%;
   transition: all .3s ease-in;
   visibility: visible;
   opacity: 1;
+
 }
 
 
