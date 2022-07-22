@@ -10,7 +10,7 @@ export const NavDrawer = ( { styles } ) => {
   const [isOpen, setOpen] = useState(false)
   const className = isOpen ? styles.driverItemsActive : styles.driverItems
   const navDrawer = (
-    <nav>
+    <nav className={styles.navDrawer}>
       <ul className={styles.nav}>
         <NavHome styles={styles} />
         <div className={styles.navDivider} />

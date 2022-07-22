@@ -5,8 +5,10 @@ import { NavRestAPI } from './NavRestAPI';
 
 
 export const NavMain = ( { styles } ) => {
+
+  
   const navMain = (
-    <nav>
+    <nav className={styles.navMain}>
       <ul className={styles.nav}>
         <NavHome styles={styles}/>
         <div className={styles.navDivider}/>
@@ -16,5 +18,6 @@ export const NavMain = ( { styles } ) => {
       </ul>
   </nav>
   );
-  return navMain  
+  return  navMain  
 };
+

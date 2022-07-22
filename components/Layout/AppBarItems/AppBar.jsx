@@ -1,12 +1,13 @@
 import styles from '@styles/Layout/AppBar.module.css'
 import { NavMain } from './NavMain';
 import { NavDrawer } from './NavDrawer';
-
+import { useWindowSize } from '@consts/hooks';
 
 export const AppBar = () => {
-  const width = typeof window !== 'undefined' ? window.innerWidth : null
-  
 
-  return width > 350 ? <NavMain styles={styles}/> : <NavDrawer styles={styles}/>
-     
+  const size= useWindowSize();
+  console.log(size)
+
+  return size.width > 400 ? <NavMain styles={styles}/> : <NavDrawer styles={styles}/>
+    
 };
