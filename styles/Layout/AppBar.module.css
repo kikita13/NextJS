@@ -92,7 +92,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  transform: translateY(85px);
+  transform: translateY(83px);
   right: 0;
   background-color: var(--primary-color);
   position: absolute;
