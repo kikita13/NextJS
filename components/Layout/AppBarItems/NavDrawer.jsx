@@ -12,7 +12,7 @@ export const NavDrawer = ( { styles } ) => {
   const navDrawer = (
     <nav className={styles.navDrawer}>
       <ul className={styles.nav}>
-        <NavHome styles={styles} />
+        <NavHome styles={styles}  setOpen={setOpen}/>
         <div className={styles.navDivider} />
         <div className={styles.navDrawerToggle}>
           <div className={styles.image} onClick={() => setOpen(cur => !cur)}>
@@ -24,9 +24,9 @@ export const NavDrawer = ( { styles } ) => {
             />
           </div>
           <div className={className}>
-            <NavButtons styles={styles} />
-            <NavRestAPI styles={styles} />
-            <Nav404 styles={styles} />
+            <NavButtons styles={styles} isOpen={isOpen} setOpen={setOpen}/>
+            <NavRestAPI styles={styles} isOpen={isOpen} setOpen={setOpen}/>
+            <Nav404 styles={styles} isOpen={isOpen} setOpen={setOpen}/>
           </div>
         </div>
       </ul>

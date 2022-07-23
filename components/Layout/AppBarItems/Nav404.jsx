@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 
-export const Nav404 = ( { styles } ) => {
+export const Nav404 = ( { styles, setOpen, isOpen } ) => {
   const {pathname} = useRouter();
 
   const handleActive = () => pathname.includes(NOT_FOUND_PAGE) ? `${styles.navItem}  ${styles.active}` : `${styles.navItem}`
@@ -12,6 +12,7 @@ export const Nav404 = ( { styles } ) => {
     <Link href={NOT_FOUND_PAGE}>
       <li
         className={handleActive()}
+        onClick={() => setOpen(cur => false)}
       >
         404
       </li>
