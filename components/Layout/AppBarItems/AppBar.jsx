@@ -7,7 +7,7 @@ import { useWindowSize } from '@consts/hooks';
 
 export const AppBar = () => {
 
-  const size= useWindowSize();
+  const size = useWindowSize();
 
   return size.width > 400 ? <NavMain styles={styles}/> : <NavDrawer styles={styles}/>
     
