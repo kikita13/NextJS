@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.footer {
+  font-size: 80%;
+  color: var(--text-secondary-color);
+  width: 100%;
+}
+
+.footerText {
+
+}
+
+.footerValue {
+  
+}

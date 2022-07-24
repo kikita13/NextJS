@@ -17,11 +17,11 @@ const Index = ( { users } ) => {
 );
 };
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const getData = await fetch(USERS_API);
-  const data = await getData.json();
+  const users = await getData.json();
   return {
-    props: {users: data}
+    props: {users}
   }
 }
 
