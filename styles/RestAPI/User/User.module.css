@@ -17,5 +17,34 @@
   padding: 1em;
   border: 1px solid var(--text-secondary-color);
   border-radius: 1em;
+  position: relative;
+  max-width: 260px;
 }
 
+.buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.buttonsLeft {
+  cursor: pointer;
+  transform: translateX(-100%);
+}
+
+.buttonsRight {
+  cursor: pointer;
+  transform: translateX(100%);
+}
+
+.buttonsLeftNone {
+  visibility: hidden;
+}
+
+.buttonsRightNone {
+  visibility: hidden;
+}
