@@ -17,7 +17,7 @@ const Index = ( { users } ) => {
 );
 };
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const getData = await fetch(USERS_API);
   const data = await getData.json();
   return {
