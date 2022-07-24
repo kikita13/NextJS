@@ -2,6 +2,7 @@ import { User } from '@components/RestApi/User/User';
 import { USER_API } from '@consts/out-links';
 import React from 'react';
 import styles from '@styles/RestAPI/User/User.module.css'
+import Head from 'next/head';
 
 export const getServerSideProps = async (context) => {
   const { id } = context.params;
@@ -19,6 +20,9 @@ export const getServerSideProps = async (context) => {
 const Id = ( { user } ) => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>{user.name}</title>
+      </Head>
       <User styles={styles} user={user}/>
     </div>
   );
