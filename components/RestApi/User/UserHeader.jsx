@@ -1,10 +1,10 @@
-export const UserHeader = () => {
+import styles from '@styles/RestAPI/User/UserHeader.module.css'
 
-  
 
+export const UserHeader = ( { user } ) => {
   return (
-    <div>
-      
+    <div className={styles.header}>
+      {user.name}
     </div>
   );
 };

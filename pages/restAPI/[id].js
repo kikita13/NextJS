@@ -1,29 +1,28 @@
-import { USERS_API } from '@consts/out-links';
+import { User } from '@components/RestApi/User/User';
+import { USER_API } from '@consts/out-links';
 import React from 'react';
+import styles from '@styles/RestAPI/User/User.module.css'
 
-
-export const getStaticPaths = async () => {
-  const getData = await fetch(USERS_API);
-  const users = await getData.json();
-  console.log(users)
+export const getServerSideProps = async (context) => {
+  const { id } = context.params;
+  const getData = await fetch(USER_API(id));
+  const user = await getData.json();
+  if (!user) {
+    return {
+      notFound: true,
+    }
+  }
   return {
-    path: [
-      { params: {id: users.map(user => user.id) } }
-    ],
-    fallback: true
-  };
-
+    props: {user}
+  }
 }
-
-
-
-
-const Id = () => {
+const Id = ( { user } ) => {
   return (
-    <div>
-      
+    <div className={styles.container}>
+      <User styles={styles} user={user}/>
     </div>
   );
 };
 
 export default Id;
+

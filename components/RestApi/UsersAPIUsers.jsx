@@ -8,6 +8,7 @@ export const UsersAPIUsers = ({ usersData }) => {
       {usersData.map((user) => (
         <Link href={`${RESTAPI}/${user.id}`} key={user.id}>
           <div className={stylesUsers.user}>
+            <p>{user.name}</p>
             <p>{user.email}</p>
           </div>
         </Link>
