@@ -1,18 +1,14 @@
+import { USERS_API } from '@consts/out-links';
 import React from 'react';
-export const getStaticProps = async (context) => {
+
+
+export const getStaticPaths = async () => {
   const getData = await fetch(USERS_API);
-  const data = await getData.json();
-  return {
-    props: {users: data}
-  }
-
-}
-
-
-export const getStaticPath = async ( { users } ) => {
+  const users = await getData.json();
+  console.log(users)
   return {
     path: [
-      { params: {id: users.map(user => user.id)} }
+      { params: {id: users.map(user => user.id) } }
     ],
     fallback: true
   };
@@ -22,10 +18,10 @@ export const getStaticPath = async ( { users } ) => {
 
 
 
-const Id = ( { users } ) => {
+const Id = () => {
   return (
     <div>
-      {users.map(user => (<div key={user.id}>{user.name}</div>))}
+      
     </div>
   );
 };
