@@ -20,8 +20,13 @@ export const UsersAPI = ( {
         users={users} 
         usersData={usersData}
       />
-      <SearchUsersAPI setFilterUsers={setFilterUsers}/>
-      <UsersAPIUsers filteredUsers={filteredUsers} filterUsers={filterUsers} usersData={usersData}/>
+      <SearchUsersAPI 
+      usersData={usersData} 
+      setFilterUsers={setFilterUsers}/>
+      <UsersAPIUsers
+       filteredUsers={filteredUsers} 
+       filterUsers={filterUsers} 
+       usersData={usersData}/>
     </div>
   );
 };

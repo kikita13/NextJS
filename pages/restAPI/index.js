@@ -23,9 +23,8 @@ const Index = ( { users } ) => {
       setFilterUsers={setFilterUsers}  
       filteredUsers={filteredUsers}
     /> 
-</div>
-);
-};
+  </div>
+)};
 
 export const getServerSideProps = async (context) => {
   const getData = await fetch(USERS_API);
