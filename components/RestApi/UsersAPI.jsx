@@ -1,8 +1,17 @@
+import { SearchUsersAPI } from "./SearchUsersAPI";
 import { UsersAPIBtn } from "./UsersAPIBtn";
 import { UsersAPIUsers } from "./UsersAPIUsers";
 
 
-export const UsersAPI = ( { styles, usersData, setUsersData, users } ) => {
+export const UsersAPI = ( {
+   styles, 
+   usersData, 
+   setUsersData, 
+   users,
+   filterUsers,
+   setFilterUsers,
+   filteredUsers
+  } ) => {
 
   return (
     <div className={styles.content}>
@@ -11,7 +20,8 @@ export const UsersAPI = ( { styles, usersData, setUsersData, users } ) => {
         users={users} 
         usersData={usersData}
       />
-      <UsersAPIUsers usersData={usersData}/>
+      <SearchUsersAPI setFilterUsers={setFilterUsers}/>
+      <UsersAPIUsers filteredUsers={filteredUsers} filterUsers={filterUsers} usersData={usersData}/>
     </div>
   );
 };

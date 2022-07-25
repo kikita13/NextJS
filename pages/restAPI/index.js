@@ -6,13 +6,23 @@ import { USERS_API } from '@consts/out-links';
 
 
 const Index = ( { users } ) => {
-  const [usersData, setUsersData] = useState([])
+  const [usersData, setUsersData] = useState([]);
+  const [filterUsers, setFilterUsers] = useState([]);
+  const filteredUsers = filterUsers == ''  ?  usersData : usersData.filter(user => {return user.name.toLowerCase().includes(filterUsers?.toLowerCase())})
   return (
   <div className={styles.container}>
     <Head>
       <title>Rest API</title>
     </Head>
-    <UsersAPI styles={styles} users={users} usersData={usersData} setUsersData={setUsersData}/> 
+    <UsersAPI 
+      styles={styles} 
+      users={users} 
+      usersData={usersData} 
+      setUsersData={setUsersData}
+      filterUsers={filterUsers}
+      setFilterUsers={setFilterUsers}  
+      filteredUsers={filteredUsers}
+    /> 
 </div>
 );
 };

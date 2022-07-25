@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   padding-bottom: var(--footer-height);
   align-items: center;
-  height: 100%;
+
 }
 
 .user {
