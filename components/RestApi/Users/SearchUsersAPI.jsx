@@ -1,4 +1,4 @@
-import styles from '@styles/RestAPI/SearchUsersAPI.module.css'
+import styles from '@styles/RestAPI/Users/SearchUsersAPI.module.css'
 
 
 export const SearchUsersAPI = ( { setFilterUsers, usersData } ) => {
@@ -8,8 +8,6 @@ export const SearchUsersAPI = ( { setFilterUsers, usersData } ) => {
       className={handleActive} 
       onChange={(e) => setFilterUsers(e.target.value)}
       placeholder='start typing...'
-    >
-      
-    </input>
+    />
   );
 };

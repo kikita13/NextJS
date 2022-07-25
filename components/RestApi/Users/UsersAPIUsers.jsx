@@ -1,5 +1,5 @@
 import { RESTAPI } from "@consts/nav-links";
-import stylesUsers from "@styles/RestAPI/UsersAPIUsers.module.css";
+import stylesUsers from "@styles/RestAPI/Users/UsersAPIUsers.module.css";
 import Link from "next/link";
 
 export const UsersAPIUsers = ({ usersData, filterUsers, filteredUsers }) => {

@@ -1,4 +1,4 @@
-import styles from '@styles/RestAPI/UsersAPIBtn.module.css'
+import styles from '@styles/RestAPI/Users/UsersAPIBtn.module.css'
 
 
 export const UsersAPIBtn = ( { setUsersData, users } ) => {

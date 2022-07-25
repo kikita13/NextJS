@@ -1,0 +1,28 @@
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.button {
+  transition: all .3s ease-in;
+  position: relative;
+  color: var(--text-primary-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-secondary-color);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  transition: all .3s ease-in;
+  background-color: var(--primary-color);
+}
+
+.content {
+  color: var(--text-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
