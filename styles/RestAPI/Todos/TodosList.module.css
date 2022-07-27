@@ -42,3 +42,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+  .list {
+    width: 100%;
+  }
+}
