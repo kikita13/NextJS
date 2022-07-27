@@ -1,0 +1,14 @@
+.button {
+  transition: all .3s ease-in;
+  color: var(--text-primary-color);
+  background-color: var(--primary-color);
+  padding: 10px;
+  font-size: 16px;
+  height: 3em;
+  border: 1px solid var(--primary-color);
+}
+
+.button:hover {
+  transition: all .3s ease-in;
+  border-left: 1px solid var(--bg-color);
+}
