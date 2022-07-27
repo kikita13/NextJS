@@ -1,18 +1,20 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { TodosInput } from "./TodosInput";
 import { TodosList } from "./TodosList";
 import { TodosSubmit } from "./TodosSubmit";
+import { addTodo } from "store/slices/TodoSlice";
 
-
-export const ToDo = ( props ) => {
-  const {styles, todos, setTodos, inputValue, setInputValue, submit} = props
-  console.log(inputValue, todos);
+export const ToDo = ( { styles } ) => {
+  const [text, setText] = useState('')
+  
   return (
     <div className={styles.content}>
       <div className={styles.form}>
-        <TodosInput setInputValue={setInputValue}/>
-        <TodosSubmit submit={submit} todos={todos}/>
+        <TodosInput setText={setText} text={text}/>
+        <TodosSubmit setText={setText} text={text}/>
       </div>
-      <TodosList todos={todos} inputValue={inputValue}/>
+      <TodosList/>
     </div>
   );
 };

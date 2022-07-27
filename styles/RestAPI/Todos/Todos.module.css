@@ -16,16 +16,27 @@
   align-items: center;
 }
 
-* > input:focus-visible + .form {
-  border-bottom: 1px solid var(--text-primary-color);
-  border-left: 1px solid var(--text-primary-color);
-  border-right: 1px solid var(--text-primary-color);
-}
-
 .form {
-  width: fit-content;
+  width: 50%;
   height: fit-content;
   margin-top: 3em;
   border-bottom: 1px solid var(--text-secondary-color);
 }
 
+@media (max-width: 500px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form > button {
+    border-left: 1px solid var(--text-secondary-color);
+    border-right: 1px solid var(--text-secondary-color);
+    width: 100%;
+  }
+
+  .form > input {
+    width: 100%;
+    border-bottom: 1px solid var(--bg-color);
+  }
+}
