@@ -12,7 +12,7 @@ const Users = ( { users } ) => {
   return (
   <div className={styles.container}>
     <Head>
-      <title>Rest API</title>
+      <title>Users</title>
     </Head>
     <UsersAPI 
       styles={styles} 

@@ -25,7 +25,6 @@ button {
 
 :root {
   --nav-padding: 10px 15px;
-  --primary-color: ;
   --nav-height: 50px;
   --nav-width: 100%;
   --footer-height: 40px;
@@ -36,4 +35,5 @@ button {
   --secondary-color: #c5c6c7;
   --text-primary-color: #66fcf1;
   --text-secondary-color: #45a29e;
+  --active-btn-color: #2e3b4b;
 }
