@@ -54,6 +54,9 @@ span~#plus {
   padding: 30px 10px;
   font-weight: 500;
   user-select: text;
+  line-height: 1em;
+  color: var(--text-primary-color);
+  background: var(--bg-color);
 }
 
 .button:hover {
@@ -67,4 +70,8 @@ span~#plus {
 #value:hover {
   background: var(--bg-color);
   cursor: default;
+}
+
+#value:focus-visible {
+  outline: none;
 }
