@@ -3,7 +3,7 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 import styles from '@styles/Calculator/Calculator.module.css'
 
-const index = () => {
+const Index = () => {
   const [value, setValue] = useState('')
   const result = num => setValue(value+num)
   const evalFun = () => {if(value) {
@@ -33,4 +33,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
